@@ -8,7 +8,7 @@ import "./Panel.css"
 const Panel5b = props => (
     <div>
         <h1> Giftastic </h1>
-        <p>Details: Giftastic pulls from the giphy API to bring 10 gifs related to what the user searched</p>
+        <p>Details: Giftastic uses jQuery and the Giphy API to pull 4 basketball gif cards for whatever a user searches</p>
         <p>Github: <a href="https://github.com/jsenken/GifTastic">Repo</a>, <a href="https://jsenken.github.io/GifTastic/">Deployed</a> </p>
         <p>Technologies Used: HTML, CSS</p>
 

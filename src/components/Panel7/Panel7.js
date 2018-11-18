@@ -4,7 +4,8 @@ import React, { Component } from "react";
 // import { List, ListItem } from "../../components/List";
 // import { Input, TextArea, FormBtn } from "../../components/Form";
 import "./Panel.css"
-
+import Panel7a from "../Panel7a/Panel7a";
+import Panel7b from "../Panel7b/Panel7b";
 
 
 class Panel7 extends Component {
@@ -17,41 +18,15 @@ class Panel7 extends Component {
     }
     render() {
         return (
-          <div>      
-            <h1>Contact Me</h1>    
-            <form>
-              <label>
-                Your Name:
-                <input
-                  name="name"
-                  type="text"
-                  value={this.state.name}
-                  onChange={this.handleInputChange} />
-              </label>
-              <br />
-              <label>
-                Your Email:
-                <input
-                  name="email"
-                  type="text"
-                  value={this.state.email}
-                  onChange={this.handleInputChange} />
-              </label>
-              <br />
-              <label>
-                Your Message:
-                <input
-                  name="message"
-                  id="message"
-                  type="text"
-                  value={this.state.message}
-                  onChange={this.handleInputChange} />
-              </label>
-              <br />
-              <input type="submit" value="Submit" />
-            </form>        
-          </div>
-        )
+<div className="swap7" onMouseOver={() => this.setState({ bool: true })} onMouseOut={() => this.setState({ bool: false })}>
+{
+    this.state.bool ? (
+      <Panel7b></Panel7b>  ) : (
+       <Panel7a></Panel7a>     )
+}
+</div>
+
+)
     }
 }
 

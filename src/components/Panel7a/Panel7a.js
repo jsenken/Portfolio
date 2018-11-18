@@ -4,10 +4,12 @@ import React, { Component } from "react";
 // import { List, ListItem } from "../../components/List";
 // import { Input, TextArea, FormBtn } from "../../components/Form";
 import "./Panel.css"
+import brick from "../../media/brick.png"
 
-const Panel1a = props => (
-    <div className="portTitle">
-    My Portfolio
+const Panel7a = props => (
+    <div>
+        <h1>Brick Breaker Resume</h1>
+        <img src={brick} alt="brick" className="brick"></img>
     </div>
     )
-    export default Panel1a;
+    export default Panel7a;

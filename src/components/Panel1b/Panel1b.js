@@ -7,7 +7,7 @@ import "./Panel.css"
 
 const Panel1b = props => (
     <div>
-        <div>This portfolio was made from react.js</div>
+        <div>This portfolio was made with react.js</div>
         <p>Github: <a href="github.com">URL</a></p>
     </div>
 )
